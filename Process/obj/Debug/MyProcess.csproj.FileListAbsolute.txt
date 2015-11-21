@@ -37,3 +37,8 @@ C:\Users\Tiny\Documents\GitHub\PubSubStor\Process\bin\Debug\Process.dll
 C:\Users\Tiny\Documents\GitHub\PubSubStor\Process\bin\Debug\Process.pdb
 C:\Users\Tiny\Documents\GitHub\PubSubStor\Process\obj\Debug\Process.dll
 C:\Users\Tiny\Documents\GitHub\PubSubStor\Process\obj\Debug\Process.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\Process\bin\Debug\Process.dll.config
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\Process\bin\Debug\Process.dll
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\Process\bin\Debug\Process.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\Process\obj\Debug\Process.dll
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\Process\obj\Debug\Process.pdb

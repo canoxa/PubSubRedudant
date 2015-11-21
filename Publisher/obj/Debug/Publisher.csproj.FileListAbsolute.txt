@@ -138,3 +138,17 @@ C:\Users\Tiny\Documents\GitHub\PubSubStor\Publisher\bin\Debug\TreeNode.pdb
 C:\Users\Tiny\Documents\GitHub\PubSubStor\Publisher\obj\Debug\Publisher.csprojResolveAssemblyReference.cache
 C:\Users\Tiny\Documents\GitHub\PubSubStor\Publisher\obj\Debug\Publisher.exe
 C:\Users\Tiny\Documents\GitHub\PubSubStor\Publisher\obj\Debug\Publisher.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\Publisher\bin\Debug\Publisher.exe.config
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\Publisher\bin\Debug\Publisher.exe
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\Publisher\bin\Debug\Publisher.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\Publisher\bin\Debug\Broker.exe
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\Publisher\bin\Debug\CommonTypes.dll
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\Publisher\bin\Debug\Message.dll
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\Publisher\bin\Debug\TreeNode.dll
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\Publisher\bin\Debug\Broker.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\Publisher\bin\Debug\CommonTypes.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\Publisher\bin\Debug\Message.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\Publisher\bin\Debug\TreeNode.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\Publisher\obj\Debug\Publisher.csprojResolveAssemblyReference.cache
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\Publisher\obj\Debug\Publisher.exe
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\Publisher\obj\Debug\Publisher.pdb

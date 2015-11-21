@@ -90,3 +90,7 @@ C:\Users\Tiny\Documents\GitHub\PubSubStor\TreeNode\bin\Debug\TreeNode.dll
 C:\Users\Tiny\Documents\GitHub\PubSubStor\TreeNode\bin\Debug\TreeNode.pdb
 C:\Users\Tiny\Documents\GitHub\PubSubStor\TreeNode\obj\Debug\TreeNode.dll
 C:\Users\Tiny\Documents\GitHub\PubSubStor\TreeNode\obj\Debug\TreeNode.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\TreeNode\bin\Debug\TreeNode.dll
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\TreeNode\bin\Debug\TreeNode.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\TreeNode\obj\Debug\TreeNode.dll
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\TreeNode\obj\Debug\TreeNode.pdb

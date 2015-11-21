@@ -118,3 +118,17 @@ C:\Users\Tiny\Documents\GitHub\PubSubStor\Broker\bin\Debug\TreeNode.pdb
 C:\Users\Tiny\Documents\GitHub\PubSubStor\Broker\obj\Debug\Broker.csprojResolveAssemblyReference.cache
 C:\Users\Tiny\Documents\GitHub\PubSubStor\Broker\obj\Debug\Broker.exe
 C:\Users\Tiny\Documents\GitHub\PubSubStor\Broker\obj\Debug\Broker.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\Broker\bin\Debug\Broker.exe.config
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\Broker\bin\Debug\Broker.exe
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\Broker\bin\Debug\Broker.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\Broker\bin\Debug\CommonTypes.dll
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\Broker\bin\Debug\Message.dll
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\Broker\bin\Debug\TreeNode.dll
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\Broker\bin\Debug\CommonTypes.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\Broker\bin\Debug\Message.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\Broker\bin\Debug\TreeNode.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\Broker\obj\Debug\Broker.csprojResolveAssemblyReference.cache
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\Broker\obj\Debug\Broker.exe
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\Broker\obj\Debug\Broker.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\Broker\bin\Debug\LoadBalancer.dll
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\Broker\bin\Debug\LoadBalancer.pdb

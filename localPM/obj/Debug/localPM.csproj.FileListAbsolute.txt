@@ -99,3 +99,23 @@ C:\Users\Tiny\Documents\GitHub\PubSubStor\localPM\bin\Debug\Message.pdb
 C:\Users\Tiny\Documents\GitHub\PubSubStor\localPM\obj\Debug\localPM.csprojResolveAssemblyReference.cache
 C:\Users\Tiny\Documents\GitHub\PubSubStor\localPM\obj\Debug\localPM.exe
 C:\Users\Tiny\Documents\GitHub\PubSubStor\localPM\obj\Debug\localPM.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\localPM\bin\Debug\localPM.exe.config
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\localPM\bin\Debug\localPM.exe
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\localPM\bin\Debug\localPM.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\localPM\bin\Debug\Broker.exe
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\localPM\bin\Debug\CommonTypes.dll
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\localPM\bin\Debug\Publisher.exe
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\localPM\bin\Debug\subscriber.exe
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\localPM\bin\Debug\TreeNode.dll
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\localPM\bin\Debug\Message.dll
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\localPM\bin\Debug\Broker.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\localPM\bin\Debug\CommonTypes.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\localPM\bin\Debug\Publisher.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\localPM\bin\Debug\subscriber.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\localPM\bin\Debug\TreeNode.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\localPM\bin\Debug\Message.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\localPM\obj\Debug\localPM.csprojResolveAssemblyReference.cache
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\localPM\obj\Debug\localPM.exe
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\localPM\obj\Debug\localPM.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\localPM\bin\Debug\LoadBalancer.dll
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\localPM\bin\Debug\LoadBalancer.pdb

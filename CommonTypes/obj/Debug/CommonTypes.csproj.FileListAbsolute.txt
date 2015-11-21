@@ -127,3 +127,12 @@ C:\Users\Tiny\Documents\GitHub\PubSubStor\CommonTypes\bin\Debug\TreeNode.pdb
 C:\Users\Tiny\Documents\GitHub\PubSubStor\CommonTypes\obj\Debug\CommonTypes.csprojResolveAssemblyReference.cache
 C:\Users\Tiny\Documents\GitHub\PubSubStor\CommonTypes\obj\Debug\CommonTypes.dll
 C:\Users\Tiny\Documents\GitHub\PubSubStor\CommonTypes\obj\Debug\CommonTypes.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\CommonTypes\bin\Debug\CommonTypes.dll
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\CommonTypes\bin\Debug\CommonTypes.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\CommonTypes\bin\Debug\Message.dll
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\CommonTypes\bin\Debug\TreeNode.dll
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\CommonTypes\bin\Debug\Message.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\CommonTypes\bin\Debug\TreeNode.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\CommonTypes\obj\Debug\CommonTypes.csprojResolveAssemblyReference.cache
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\CommonTypes\obj\Debug\CommonTypes.dll
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\CommonTypes\obj\Debug\CommonTypes.pdb

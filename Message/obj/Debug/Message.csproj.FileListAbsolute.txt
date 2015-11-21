@@ -37,3 +37,8 @@ C:\Users\Tiny\Documents\GitHub\PubSubStor\Message\bin\Debug\Message.dll
 C:\Users\Tiny\Documents\GitHub\PubSubStor\Message\bin\Debug\Message.pdb
 C:\Users\Tiny\Documents\GitHub\PubSubStor\Message\obj\Debug\Message.dll
 C:\Users\Tiny\Documents\GitHub\PubSubStor\Message\obj\Debug\Message.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\Message\bin\Debug\Message.dll.config
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\Message\bin\Debug\Message.dll
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\Message\bin\Debug\Message.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\Message\obj\Debug\Message.dll
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\Message\obj\Debug\Message.pdb

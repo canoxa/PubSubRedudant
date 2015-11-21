@@ -79,6 +79,7 @@ namespace PubSub
         private string nome;
         private string myPort;
         private List<string> subscriptions;
+        private LoadBalancer loadBalancer;
 
         // vida infinita !!!!
         public override object InitializeLifetimeService()
@@ -94,6 +95,7 @@ namespace PubSub
             this.myPort = p4;
             this.urlMyBroker = p5;
             subscriptions = new List<string>();
+            loadBalancer = new LoadBalancer(p5);
         }
         public void subscribe(string topic)
         {
@@ -104,12 +106,10 @@ namespace PubSub
 
             subscriptions.Add(topic);
 
-            
-            foreach(var a in urlMyBroker)
-            {
-                BrokerReceiveBroker subunsub = (BrokerReceiveBroker)Activator.GetObject(typeof(BrokerReceiveBroker), a + "BrokerCommunication");
+            string broker = loadBalancer.getTarget();
+                BrokerReceiveBroker subunsub = (BrokerReceiveBroker)Activator.GetObject(typeof(BrokerReceiveBroker), broker + "BrokerCommunication");
                 subunsub.receiveSub(topic, myURL);
-            }
+
             //BrokerReceiveBroker subunsub = (BrokerReceiveBroker)Activator.GetObject(typeof(BrokerReceiveBroker), urlMyBroker+"BrokerCommunication");
             //subunsub.receiveSub(topic, myURL);
         }
@@ -123,11 +123,10 @@ namespace PubSub
 
             Console.WriteLine("unsubscribing on topic {0} o meu url e {1}", topic, myURL);
 
-            foreach (var a in urlMyBroker)
-            {
-                BrokerReceiveBroker subunsub = (BrokerReceiveBroker)Activator.GetObject(typeof(BrokerReceiveBroker), a + "BrokerCommunication");
+            string broker = loadBalancer.getTarget();
+            BrokerReceiveBroker subunsub = (BrokerReceiveBroker)Activator.GetObject(typeof(BrokerReceiveBroker), broker + "BrokerCommunication");
                 subunsub.receiveUnsub(topic, myURL);
-            }
+            
         }
 
         public void status()
@@ -139,6 +138,8 @@ namespace PubSub
                 Console.WriteLine("\t" + s);
             }
         }
+
+
     }
 
     class SubNotify : MarshalByRefObject, SubscriberNotify {

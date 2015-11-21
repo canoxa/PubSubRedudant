@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeNode", "TreeNode\TreeNo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "localPM", "localPM\localPM.csproj", "{83B0634E-3D6F-46FD-B915-2BB7D9FF8477}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoadBalancer", "LoadBalancer\LoadBalancer.csproj", "{28D237C6-8D97-4D7B-9963-89FAE7874126}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{83B0634E-3D6F-46FD-B915-2BB7D9FF8477}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83B0634E-3D6F-46FD-B915-2BB7D9FF8477}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83B0634E-3D6F-46FD-B915-2BB7D9FF8477}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28D237C6-8D97-4D7B-9963-89FAE7874126}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28D237C6-8D97-4D7B-9963-89FAE7874126}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28D237C6-8D97-4D7B-9963-89FAE7874126}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28D237C6-8D97-4D7B-9963-89FAE7874126}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
