@@ -1,0 +1,6 @@
+Subscriber subscriber1 Subscribe /testtopic
+Status
+Wait 3000
+Subscriber subscriber1 Unsubscribe /testtopic
+Wait 3000
+Status

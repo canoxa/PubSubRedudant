@@ -1,0 +1,120 @@
+C:\DAD\secondTry\Broker\obj\Debug\Broker.csprojResolveAssemblyReference.cache
+C:\DAD\secondTry\Broker\bin\Debug\Broker.dll.config
+C:\DAD\secondTry\Broker\bin\Debug\Broker.dll
+C:\DAD\secondTry\Broker\bin\Debug\Broker.pdb
+C:\DAD\secondTry\Broker\bin\Debug\Message.dll
+C:\DAD\secondTry\Broker\bin\Debug\Process.dll
+C:\DAD\secondTry\Broker\bin\Debug\subscriber.dll
+C:\DAD\secondTry\Broker\bin\Debug\Message.pdb
+C:\DAD\secondTry\Broker\bin\Debug\Process.pdb
+C:\DAD\secondTry\Broker\bin\Debug\subscriber.pdb
+C:\DAD\secondTry\Broker\obj\Debug\Broker.dll
+C:\DAD\secondTry\Broker\obj\Debug\Broker.pdb
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\PubSub_v2\Broker\bin\Debug\Broker.dll.config
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\PubSub_v2\Broker\bin\Debug\Broker.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\PubSub_v2\Broker\bin\Debug\Broker.pdb
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\PubSub_v2\Broker\bin\Debug\Message.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\PubSub_v2\Broker\bin\Debug\Process.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\PubSub_v2\Broker\bin\Debug\subscriber.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\PubSub_v2\Broker\bin\Debug\Message.pdb
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\PubSub_v2\Broker\bin\Debug\Process.pdb
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\PubSub_v2\Broker\bin\Debug\subscriber.pdb
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\PubSub_v2\Broker\obj\Debug\Broker.csprojResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\PubSub_v2\Broker\obj\Debug\Broker.dll
+\\vmware-host\Shared Folders\Documents\Visual Studio 2015\Projects\PubSub_v2\Broker\obj\Debug\Broker.pdb
+C:\Users\Lucília\Downloads\PubSub_v3-master\PubSub_v3-master\Broker\bin\Debug\Broker.dll.config
+C:\Users\Lucília\Downloads\PubSub_v3-master\PubSub_v3-master\Broker\bin\Debug\Broker.dll
+C:\Users\Lucília\Downloads\PubSub_v3-master\PubSub_v3-master\Broker\bin\Debug\Broker.pdb
+C:\Users\Lucília\Downloads\PubSub_v3-master\PubSub_v3-master\Broker\bin\Debug\Message.dll
+C:\Users\Lucília\Downloads\PubSub_v3-master\PubSub_v3-master\Broker\bin\Debug\Process.dll
+C:\Users\Lucília\Downloads\PubSub_v3-master\PubSub_v3-master\Broker\bin\Debug\subscriber.dll
+C:\Users\Lucília\Downloads\PubSub_v3-master\PubSub_v3-master\Broker\bin\Debug\Message.pdb
+C:\Users\Lucília\Downloads\PubSub_v3-master\PubSub_v3-master\Broker\bin\Debug\Process.pdb
+C:\Users\Lucília\Downloads\PubSub_v3-master\PubSub_v3-master\Broker\bin\Debug\subscriber.pdb
+C:\Users\Lucília\Downloads\PubSub_v3-master\PubSub_v3-master\Broker\obj\Debug\Broker.csprojResolveAssemblyReference.cache
+C:\Users\Lucília\Downloads\PubSub_v3-master\PubSub_v3-master\Broker\obj\Debug\Broker.dll
+C:\Users\Lucília\Downloads\PubSub_v3-master\PubSub_v3-master\Broker\obj\Debug\Broker.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSub_v3.1\Broker\bin\Debug\Broker.dll.config
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSub_v3.1\Broker\bin\Debug\Broker.dll
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSub_v3.1\Broker\bin\Debug\Broker.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSub_v3.1\Broker\bin\Debug\Message.dll
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSub_v3.1\Broker\bin\Debug\Process.dll
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSub_v3.1\Broker\bin\Debug\subscriber.dll
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSub_v3.1\Broker\bin\Debug\Message.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSub_v3.1\Broker\bin\Debug\Process.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSub_v3.1\Broker\bin\Debug\subscriber.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSub_v3.1\Broker\obj\Debug\Broker.csprojResolveAssemblyReference.cache
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSub_v3.1\Broker\obj\Debug\Broker.dll
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSub_v3.1\Broker\obj\Debug\Broker.pdb
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\Broker\bin\Debug\Broker.dll.config
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\Broker\bin\Debug\Broker.dll
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\Broker\bin\Debug\Broker.pdb
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\Broker\bin\Debug\Message.dll
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\Broker\bin\Debug\Process.dll
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\Broker\bin\Debug\subscriber.dll
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\Broker\bin\Debug\Message.pdb
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\Broker\bin\Debug\Process.pdb
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\Broker\bin\Debug\subscriber.pdb
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\Broker\obj\Debug\Broker.csprojResolveAssemblyReference.cache
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\Broker\obj\Debug\Broker.dll
+C:\Users\Lucília\Documents\GitHub\PubSub_v3.1\Broker\obj\Debug\Broker.pdb
+C:\DAD\PubSub_v3.1\Broker\bin\Debug\Broker.exe.config
+C:\DAD\PubSub_v3.1\Broker\bin\Debug\Broker.exe
+C:\DAD\PubSub_v3.1\Broker\bin\Debug\Broker.pdb
+C:\DAD\PubSub_v3.1\Broker\bin\Debug\CommonTypes.dll
+C:\DAD\PubSub_v3.1\Broker\bin\Debug\Message.dll
+C:\DAD\PubSub_v3.1\Broker\bin\Debug\TreeNode.dll
+C:\DAD\PubSub_v3.1\Broker\bin\Debug\CommonTypes.pdb
+C:\DAD\PubSub_v3.1\Broker\bin\Debug\Message.pdb
+C:\DAD\PubSub_v3.1\Broker\bin\Debug\TreeNode.pdb
+C:\DAD\PubSub_v3.1\Broker\obj\Debug\Broker.csprojResolveAssemblyReference.cache
+C:\DAD\PubSub_v3.1\Broker\obj\Debug\Broker.exe
+C:\DAD\PubSub_v3.1\Broker\obj\Debug\Broker.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubv4v6\Broker\bin\Debug\Broker.exe.config
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubv4v6\Broker\bin\Debug\Broker.exe
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubv4v6\Broker\bin\Debug\Broker.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubv4v6\Broker\bin\Debug\CommonTypes.dll
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubv4v6\Broker\bin\Debug\Message.dll
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubv4v6\Broker\bin\Debug\TreeNode.dll
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubv4v6\Broker\bin\Debug\CommonTypes.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubv4v6\Broker\bin\Debug\Message.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubv4v6\Broker\bin\Debug\TreeNode.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubv4v6\Broker\obj\Debug\Broker.csprojResolveAssemblyReference.cache
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubv4v6\Broker\obj\Debug\Broker.exe
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubv4v6\Broker\obj\Debug\Broker.pdb
+C:\DAD\pubsubform\Broker\bin\Debug\Broker.exe.config
+C:\DAD\pubsubform\Broker\bin\Debug\Broker.exe
+C:\DAD\pubsubform\Broker\bin\Debug\Broker.pdb
+C:\DAD\pubsubform\Broker\bin\Debug\CommonTypes.dll
+C:\DAD\pubsubform\Broker\bin\Debug\Message.dll
+C:\DAD\pubsubform\Broker\bin\Debug\TreeNode.dll
+C:\DAD\pubsubform\Broker\bin\Debug\CommonTypes.pdb
+C:\DAD\pubsubform\Broker\bin\Debug\Message.pdb
+C:\DAD\pubsubform\Broker\bin\Debug\TreeNode.pdb
+C:\DAD\pubsubform\Broker\obj\Debug\Broker.csprojResolveAssemblyReference.cache
+C:\DAD\pubsubform\Broker\obj\Debug\Broker.exe
+C:\DAD\pubsubform\Broker\obj\Debug\Broker.pdb
+C:\DAD\PubSubGroup14\Broker\bin\Debug\Broker.exe.config
+C:\DAD\PubSubGroup14\Broker\bin\Debug\Broker.exe
+C:\DAD\PubSubGroup14\Broker\bin\Debug\Broker.pdb
+C:\DAD\PubSubGroup14\Broker\bin\Debug\CommonTypes.dll
+C:\DAD\PubSubGroup14\Broker\bin\Debug\Message.dll
+C:\DAD\PubSubGroup14\Broker\bin\Debug\TreeNode.dll
+C:\DAD\PubSubGroup14\Broker\bin\Debug\CommonTypes.pdb
+C:\DAD\PubSubGroup14\Broker\bin\Debug\Message.pdb
+C:\DAD\PubSubGroup14\Broker\bin\Debug\TreeNode.pdb
+C:\DAD\PubSubGroup14\Broker\obj\Debug\Broker.csprojResolveAssemblyReference.cache
+C:\DAD\PubSubGroup14\Broker\obj\Debug\Broker.exe
+C:\DAD\PubSubGroup14\Broker\obj\Debug\Broker.pdb
+C:\Users\Tiny\Documents\GitHub\PubSubStor\Broker\bin\Debug\Broker.exe.config
+C:\Users\Tiny\Documents\GitHub\PubSubStor\Broker\bin\Debug\Broker.exe
+C:\Users\Tiny\Documents\GitHub\PubSubStor\Broker\bin\Debug\Broker.pdb
+C:\Users\Tiny\Documents\GitHub\PubSubStor\Broker\bin\Debug\CommonTypes.dll
+C:\Users\Tiny\Documents\GitHub\PubSubStor\Broker\bin\Debug\Message.dll
+C:\Users\Tiny\Documents\GitHub\PubSubStor\Broker\bin\Debug\TreeNode.dll
+C:\Users\Tiny\Documents\GitHub\PubSubStor\Broker\bin\Debug\CommonTypes.pdb
+C:\Users\Tiny\Documents\GitHub\PubSubStor\Broker\bin\Debug\Message.pdb
+C:\Users\Tiny\Documents\GitHub\PubSubStor\Broker\bin\Debug\TreeNode.pdb
+C:\Users\Tiny\Documents\GitHub\PubSubStor\Broker\obj\Debug\Broker.csprojResolveAssemblyReference.cache
+C:\Users\Tiny\Documents\GitHub\PubSubStor\Broker\obj\Debug\Broker.exe
+C:\Users\Tiny\Documents\GitHub\PubSubStor\Broker\obj\Debug\Broker.pdb
