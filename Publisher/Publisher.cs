@@ -4,6 +4,8 @@ using System.Linq;
 using System.Runtime.Remoting;
 using System.Runtime.Remoting.Channels;
 using System.Runtime.Remoting.Channels.Tcp;
+using System.Runtime.Remoting.Messaging;
+using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -82,6 +84,12 @@ namespace PubSub
         {
             return null;
         }
+        public delegate void PubRemoteAsyncDelegate(Message m, string pubName, int filter, int order, int eventNumber, int logMode);
+        public static void PubRemoteAsyncCallBack(IAsyncResult ar)
+        {
+            PubRemoteAsyncDelegate del = (PubRemoteAsyncDelegate)((AsyncResult)ar).AsyncDelegate;
+            return;
+        }
 
         public MPMPubImplementation(string p1, string p2, string p3, string p4,List<string> p5)
         {
@@ -110,8 +118,6 @@ namespace PubSub
                 }
 
             
-
-            BrokerReceiveBroker pub = (BrokerReceiveBroker)Activator.GetObject(typeof(BrokerReceiveBroker), urlMyBroker + "BrokerCommunication");
             for (int i = 0; i < Int32.Parse(number); i++)
             {
                 Console.WriteLine("Publicar {0} seqNumber {1} modo {2}", topic, count,filter);
@@ -122,9 +128,27 @@ namespace PubSub
                 log.log(this.name, this.name, topic, eventNumber, "publisher");
 
                 System.Threading.Thread.Sleep(Int32.Parse(secs));
-                pub.receivePublication(maux, this.name, filter, order, eventNumber,logMode);
+
+                foreach (var broker in urlMyBroker)
+                {
+                    BrokerReceiveBroker pub = (BrokerReceiveBroker)Activator.GetObject(typeof(BrokerReceiveBroker), broker + "BrokerCommunication");
+                    try
+                    {
+                        PubRemoteAsyncDelegate remoteDel = new PubRemoteAsyncDelegate(pub.receivePublication);
+                        AsyncCallback RemoteCallBack = new AsyncCallback(PubRemoteAsyncCallBack);
+                        IAsyncResult remAr = remoteDel.BeginInvoke(maux, this.name, filter, order, eventNumber, logMode, RemoteCallBack, null);
+
+                    }
+                    catch (SocketException)
+                    {
+                        Console.WriteLine("Could not locate server");
+                    }
+                    //pub.receivePublication(maux, this.name, filter, order, eventNumber, logMode);
+                }
+                
                 eventNumber++;
             }
+
         }
 
         public void status()

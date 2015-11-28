@@ -225,8 +225,6 @@ C:\Users\Tiny\Documents\GitHub\PubSubStor\PuppetMaster\obj\Debug\PuppetMaster.cs
 C:\Users\Tiny\Documents\GitHub\PubSubStor\PuppetMaster\obj\Debug\PuppetMaster.exe
 C:\Users\Tiny\Documents\GitHub\PubSubStor\PuppetMaster\obj\Debug\PuppetMaster.pdb
 C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\PuppetMaster\bin\Debug\PuppetMaster.exe.config
-C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\PuppetMaster\obj\Debug\PuppetMaster.exe
-C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\PuppetMaster\obj\Debug\PuppetMaster.pdb
 C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\PuppetMaster\bin\Debug\PuppetMaster.exe
 C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\PuppetMaster\bin\Debug\PuppetMaster.pdb
 C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\PuppetMaster\bin\Debug\Broker.exe
@@ -236,16 +234,18 @@ C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\PuppetMaster\
 C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\PuppetMaster\bin\Debug\Publisher.exe
 C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\PuppetMaster\bin\Debug\subscriber.exe
 C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\PuppetMaster\bin\Debug\TreeNode.dll
-C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\PuppetMaster\bin\Debug\Broker.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\PuppetMaster\bin\Debug\LoadBalancer.dll
 C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\PuppetMaster\bin\Debug\CommonTypes.pdb
 C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\PuppetMaster\bin\Debug\Message.pdb
 C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\PuppetMaster\bin\Debug\Process.pdb
 C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\PuppetMaster\bin\Debug\Publisher.pdb
-C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\PuppetMaster\bin\Debug\subscriber.pdb
 C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\PuppetMaster\bin\Debug\TreeNode.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\PuppetMaster\bin\Debug\LoadBalancer.pdb
 C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\PuppetMaster\obj\Debug\PuppetMaster.csprojResolveAssemblyReference.cache
 C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\PuppetMaster\obj\Debug\PubSub.Form1.resources
 C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\PuppetMaster\obj\Debug\PuppetMaster.Properties.Resources.resources
 C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\PuppetMaster\obj\Debug\PuppetMaster.csproj.GenerateResource.Cache
-C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\PuppetMaster\bin\Debug\LoadBalancer.dll
-C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\PuppetMaster\bin\Debug\LoadBalancer.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\PuppetMaster\obj\Debug\PuppetMaster.exe
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\PuppetMaster\obj\Debug\PuppetMaster.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\PuppetMaster\bin\Debug\Broker.pdb
+C:\Users\Tiny\Documents\Visual Studio 2015\Projects\PubSubRedudant\PuppetMaster\bin\Debug\subscriber.pdb

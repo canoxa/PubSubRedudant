@@ -57,9 +57,19 @@ namespace PubSub
 
                 string brokers = fillArgument(site);
 
+                string replicas = "";
+
+                foreach(var r in urlBroker)
+                {
+
+                        replicas += r + "#";
+                }
+
+
                 ProcessStartInfo startInfo = new ProcessStartInfo(proj_path + @"\Broker\bin\Debug\Broker.exe");
-                string[] args = { port, url, name, s, brokers };
-                    
+                string[] args = { port, url, name, s, replicas, brokers };
+
+
                 startInfo.Arguments = String.Join(";", args);
 
                 Process p = new Process();

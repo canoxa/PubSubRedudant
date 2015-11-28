@@ -4,6 +4,8 @@ using System.Linq;
 using System.Runtime.Remoting;
 using System.Runtime.Remoting.Channels;
 using System.Runtime.Remoting.Channels.Tcp;
+using System.Runtime.Remoting.Messaging;
+using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -87,6 +89,13 @@ namespace PubSub
             return null;
         }
 
+        public delegate void SubUnsubRemoteAsyncDelegate(string t, string n);
+        public static void SubUnsubRemoteAsyncCallBack(IAsyncResult ar)
+        {
+            SubUnsubRemoteAsyncDelegate del = (SubUnsubRemoteAsyncDelegate)((AsyncResult)ar).AsyncDelegate;
+            return;
+        }
+
         public MPMSubImplementation(string p1, string p2, string p3,string p4,List<string> p5)
         {
             this.site = p1;
@@ -105,10 +114,22 @@ namespace PubSub
             Console.WriteLine("subscribing on topic {0} o meu url e {1}", topic, myURL);
 
             subscriptions.Add(topic);
-
-            string broker = loadBalancer.getTarget();
+            foreach (var broker in urlMyBroker)
+            {
+                
                 BrokerReceiveBroker subunsub = (BrokerReceiveBroker)Activator.GetObject(typeof(BrokerReceiveBroker), broker + "BrokerCommunication");
-                subunsub.receiveSub(topic, myURL);
+                try
+                {
+                    SubUnsubRemoteAsyncDelegate remoteDel = new SubUnsubRemoteAsyncDelegate(subunsub.receiveSub);
+                    AsyncCallback RemoteCallBAck = new AsyncCallback(SubUnsubRemoteAsyncCallBack);
+                    IAsyncResult remAr = remoteDel.BeginInvoke(topic, myURL, RemoteCallBAck, null);
+                }
+                catch(SocketException)
+                {
+                    Console.WriteLine("Could not locate server");
+                }
+                //subunsub.receiveSub(topic, myURL);
+            }
 
             //BrokerReceiveBroker subunsub = (BrokerReceiveBroker)Activator.GetObject(typeof(BrokerReceiveBroker), urlMyBroker+"BrokerCommunication");
             //subunsub.receiveSub(topic, myURL);
@@ -123,9 +144,21 @@ namespace PubSub
 
             Console.WriteLine("unsubscribing on topic {0} o meu url e {1}", topic, myURL);
 
-            string broker = loadBalancer.getTarget();
-            BrokerReceiveBroker subunsub = (BrokerReceiveBroker)Activator.GetObject(typeof(BrokerReceiveBroker), broker + "BrokerCommunication");
-                subunsub.receiveUnsub(topic, myURL);
+            foreach (var broker in urlMyBroker)
+            {
+                BrokerReceiveBroker subunsub = (BrokerReceiveBroker)Activator.GetObject(typeof(BrokerReceiveBroker), broker + "BrokerCommunication");
+                try
+                {
+                    SubUnsubRemoteAsyncDelegate remoteDel = new SubUnsubRemoteAsyncDelegate(subunsub.receiveUnsub);
+                    AsyncCallback RemoteCallBack = new AsyncCallback(SubUnsubRemoteAsyncCallBack);
+                    IAsyncResult remAr = remoteDel.BeginInvoke(topic, myURL, RemoteCallBack, null);
+                }
+                catch(SocketException)
+                {
+                    Console.WriteLine("Could not locate server");
+                }
+                //subunsub.receiveUnsub(topic, myURL);
+            }
             
         }
 

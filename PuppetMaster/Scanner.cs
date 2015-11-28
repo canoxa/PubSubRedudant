@@ -269,11 +269,26 @@ namespace PubSub
                     //string urlService = words[7].Substring(0, words[7].Length - 6);
                     int portPM = site_port[words[5]];
                     string urlService = words[7].Substring(0, words[7].Length - 11);//retirar XXXX/broker
-                    urlService = urlService + portPM.ToString()+"/";
+                    
 
+                    //get lista de url dos brokers
+                    TreeNode pubSite = site_treeNode[words[5]];
+                    List<Broker> siteBroker = node_broker[pubSite];
+                    List<string> urlBrokerList = new List<string>();
+                    foreach (var b in siteBroker)
+                    {
+                        if (!b.Name.Equals(words[1]))
+                        {
+                            
+                            urlBrokerList.Add(urlService + pname_port[b.Name].ToString() + "/");
+                        }
+                    }
+
+
+                    urlService = urlService + portPM.ToString() + "/";
 
                     myremote = (PuppetInterface)Activator.GetObject(typeof(PuppetInterface),urlService+"PuppetMasterURL");
-                    myremote.createProcess(t, "broker", words[1], words[5], words[7],null);
+                    myremote.createProcess(t, "broker", words[1], words[5], words[7],urlBrokerList);
                 }
                 if (line.Contains("is publisher"))
                 {

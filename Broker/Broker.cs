@@ -43,31 +43,36 @@ namespace PubSub
 
         static void Main(string[] args)
         {
-            Console.WriteLine("@broker !!! porto -> {0}", args[0]);
+           // Console.WriteLine("@broker !!! porto -> {0}", args[0]);
 
-            string[] arguments = args[0].Split(';');//arguments[0]->port; arguments[1]->url; arguments[2]->nome; arguments[3]->site;
+            string[] arguments = args[0].Split(';');//arguments[0]->port; arguments[1]->url; arguments[2]->nome; arguments[3]->site; arguments[4]->replicas;
 
-            int vizinhos = arguments.Length - 5;//numero de vizinhos
+            int vizinhos = arguments.Length - 6;//numero de vizinhos
             List<Broker> lstaux = new List<Broker>();
             //iniciar lista de vizinhos
-            for (int i = 4; i < vizinhos + 4; i++) {
+            for (int i = 5; i < vizinhos + 5; i++) {
                 string[] atr = arguments[i].Split('%');//atr[0]-name, atr[1]-site, atr[2]-url
-               
                 Broker b = new Broker(atr[2], atr[0], atr[1]);
                 lstaux.Add(b);
             }
 
-
+            string aux = arguments[4].Substring(0,arguments[4].Length -1); // retirar # do fim da string "replica#replica#"
+            string[] rep =aux.Split('#');
+            List<string> replicas = new List<string>();
+            //iniciar lista de replicas
+            foreach(var r in rep){
+                replicas.Add(r);
+            }
             TcpChannel channel = new TcpChannel(Int32.Parse(arguments[0]));
             ChannelServices.RegisterChannel(channel, true);
             
-            BrokerCommunication brokerbroker = new BrokerCommunication(lstaux, arguments[2]);
+            BrokerCommunication brokerbroker = new BrokerCommunication(lstaux, arguments[2], replicas, arguments[0] );
             RemotingServices.Marshal(brokerbroker, "BrokerCommunication", typeof(BrokerCommunication));
 
             MPMBrokerCmd processCmd = new MPMBrokerCmd();
             RemotingServices.Marshal(processCmd, "MPMProcessCmd", typeof(MPMBrokerCmd));
 
-
+            
             Console.ReadLine();
         }
     }
@@ -109,9 +114,11 @@ namespace PubSub
         private Dictionary<string, int> seqPub; //publisher->numSeq
         private Dictionary<string, int> subPubSeq; //sub%publisher->numSeq
         private List<Message> lstMessage;
+        private List<string> lstReplicas;
+        private bool isLeader; 
         
 
-        public BrokerCommunication(List<Broker> lst, string n)
+        public BrokerCommunication(List<Broker> lst, string n, List<string> replicas, string port)
         {
             name = n;
             lstSubsTopic = new Dictionary<string, List<string>>();
@@ -120,8 +127,29 @@ namespace PubSub
             pubCount = new Dictionary<string, int>();
             seqPub = new Dictionary<string, int>();
             lstMessage = new List<Message>();
+            lstReplicas = replicas;
+            isLeader = tryLeader(replicas, port);
+            Console.WriteLine("@broker !!! porto -> {0}, isLeader {1}", port, isLeader.ToString());
         }
 
+        private bool tryLeader(List<string> replicas, string p)
+        {
+            List<int> lstPort = new List<int>();
+            lstPort.Add(int.Parse(p));
+            foreach (var url in replicas)
+            {
+                string[] a = url.Split(':');
+                string b = a[2].Trim('/');
+                lstPort.Add(int.Parse(b));
+            }
+
+            int leader = lstPort.Min();
+            if(!(leader == int.Parse(p)))
+            {
+                return false;
+            }
+            return true;
+        }
 
         public List<Message> SortList(List<Message> l)
         {
@@ -565,7 +593,7 @@ namespace PubSub
         }
         public void receiveSub(string topic, string subName)
         {
-            //Console.WriteLine("sub on topic {0} received from subscriber -> {1}", topic, subName);
+            Console.WriteLine("sub on topic {0} received from subscriber -> {1}", topic, subName);
             if (lstSubsTopic.ContainsKey(subName))
             {
                 //Console.WriteLine("Ja tinha uma subs para este tipo");
@@ -576,7 +604,14 @@ namespace PubSub
                 //Console.WriteLine("Nao tinha nenhuma sub para este tipo");
                 lstSubsTopic[subName] = new List<string> { topic };
             }
-            forwardSub(topic, name);
+            if (isLeader)
+            {
+                forwardSub(topic, name);
+            }
+            else
+            {
+                return;
+            }
         }
         public void receiveUnsub(string topic, string subName)
         {
@@ -585,19 +620,33 @@ namespace PubSub
             {
                 lstSubsTopic[subName].Remove(topic);
             }
-            forwardUnsub(topic, name);
+            if (isLeader)
+            {
+                forwardUnsub(topic, name);
+            }
+            else
+            {
+                return;
+            }
         }
 
         public void receivePublication(Message m, string pubName, int filter,int order, int eventNumber, int logMode)
         {   
             Console.WriteLine("Recebi publicacao no eventNumber {0} e NumSeq {1}",eventNumber,m.SeqNum);
-            if (filter == 0)
+            if (isLeader)
             {
-                forwardFlood(m, name, eventNumber,order,logMode);
+                if (filter == 0)
+                {
+                    forwardFlood(m, name, eventNumber, order, logMode);
+                }
+                else
+                {
+                    forwardFilter(m, name, eventNumber, order, logMode);
+                }
             }
             else
             {
-                forwardFilter(m, name, eventNumber, order,logMode);
+                return;
             }
                 
         }
