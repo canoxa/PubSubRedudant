@@ -38,6 +38,18 @@ namespace PubSub
             return;
         }
 
+        public Dictionary<string, string> Pname_type
+        {
+            get
+            {
+                return pname_type;
+            }
+
+            set
+            {
+                pname_type = value;
+            }
+        }
 
         public Dictionary<string, int> getPname_port()
         {

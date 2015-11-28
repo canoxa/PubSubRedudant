@@ -101,7 +101,10 @@ namespace PubSub
                     this.crash(script[1]);
                 }
 
-
+                if (script[0] == "Status")
+                {
+                    status();
+                }
             }
         }
 
@@ -167,6 +170,38 @@ namespace PubSub
 
             pubint.publish(nEvent, topic, sec, routing, order,nE,log);
             
+        }
+
+        public void status()
+        {
+            string url;
+            foreach (KeyValuePair<string, int> n in pname_port)
+            {
+                switch (scan.Pname_type[n.Key])
+                {
+                    case "broker":
+                        url = "tcp://localhost:" + pname_port[n.Key] + "/BrokerCommunication";
+                        BrokerReceiveBroker b = (BrokerReceiveBroker)Activator.GetObject(typeof(BrokerReceiveBroker), url);
+                        b.status();
+
+                        break;
+                    case "publisher":
+
+                        url = "tcp://localhost:" + pname_port[n.Key] + "/PMPublish";
+                        PubInterface p = (PubInterface)Activator.GetObject(typeof(PubInterface), url);
+                        p.status();
+
+                        break;
+                    case "subscriber":
+
+                        url = "tcp://localhost:" + pname_port[n.Key] + "/MPMSubUnsub";
+                        SubInterface sub = (SubInterface)Activator.GetObject(typeof(SubInterface), url);
+                        sub.status();
+
+                        break;
+                }
+            }
+
         }
 
         public void crash(string pname)

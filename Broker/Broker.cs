@@ -130,6 +130,14 @@ namespace PubSub
             lstReplicas = replicas;
             isLeader = tryLeader(replicas, port);
             Console.WriteLine("@broker !!! porto -> {0}, isLeader {1}", port, isLeader.ToString());
+            //foreach(var a in replicas)
+            //{
+            //    Console.WriteLine("recplica -> {0}",a);
+            //}
+            //foreach(var b in lst)
+            //{
+            //    Console.WriteLine("vizinho -> {0}", b.Name);
+            //}
         }
 
         private bool tryLeader(List<string> replicas, string p)
@@ -177,7 +185,11 @@ namespace PubSub
 
         public void forwardFlood(Message m, string brokerName, int eventNumber, int order, int logMode)
         {
-
+            if (!isLeader)//se não és lider
+            {
+                //TODO - adicionar à lista de msg , retirar msg se já foi enviada e recebida.
+                return;
+            }
             string pubTopic = m.author + "%" + m.Topic;
             if (order == 1)//FIFO
             {
@@ -314,6 +326,11 @@ namespace PubSub
 
         public void forwardFilter(Message m, string brokerName, int eventNumber, int order, int logMode)
         {
+            if (!isLeader)//se não és lider
+            {
+                //TODO - adicionar à lista de msg , retirar msg se já foi enviada e recebida.
+                return;
+            }
             Console.WriteLine("ForwardFilter received from broker -> {0}", brokerName);
 
             string pubTopic = m.author + "%" + m.Topic;
@@ -520,12 +537,16 @@ namespace PubSub
             }
 
             //propagar para os outros todos
+            if (!isLeader)//se não és lider não propagas
+            {
+                return;
+            }
             foreach (var viz in lst)
             {
                 string urlRemote = viz.URL.Substring(0, viz.URL.Length - 6);//retirar XXXX/broker
                 
 
-                //Console.WriteLine("Flooding vizinho em {0}", urlRemote);
+                Console.WriteLine("Flooding vizinho em {0}", urlRemote);
                 BrokerReceiveBroker bro = (BrokerReceiveBroker)Activator.GetObject(typeof(BrokerReceiveBroker), urlRemote + "BrokerCommunication");
                 try
                 {
@@ -570,6 +591,10 @@ namespace PubSub
             }
 
             //propagar para os outros todos
+            if (!isLeader)//se não és lider não propagas
+            {
+                return;
+            }
             foreach (var viz in lst)
             {
                 string urlRemote = viz.URL.Substring(0, viz.URL.Length - 6);//retirar XXXX/broker
