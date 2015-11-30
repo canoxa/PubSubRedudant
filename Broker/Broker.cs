@@ -616,7 +616,7 @@ namespace PubSub
 
             }
         }
-        public void receiveSub(string topic, string subName)
+        public int receiveSub(string topic, string subName)
         {
             Console.WriteLine("sub on topic {0} received from subscriber -> {1}", topic, subName);
             if (lstSubsTopic.ContainsKey(subName))
@@ -632,13 +632,14 @@ namespace PubSub
             if (isLeader)
             {
                 forwardSub(topic, name);
+                return 1;
             }
             else
             {
-                return;
+                return 1;
             }
         }
-        public void receiveUnsub(string topic, string subName)
+        public int receiveUnsub(string topic, string subName)
         {
             Console.WriteLine("unsub on topic {0} received from {1}", topic, subName);
             if (lstSubsTopic.ContainsKey(subName))
@@ -648,10 +649,11 @@ namespace PubSub
             if (isLeader)
             {
                 forwardUnsub(topic, name);
+                return 1;
             }
             else
             {
-                return;
+                return 1;
             }
         }
 

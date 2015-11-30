@@ -53,8 +53,8 @@ namespace PubSub
         void forwardFilter(Message m, string brokerName, int eventNumber,int order,int logMode);
         void forwardSub(string topic,string brokerName);
         void forwardUnsub(string topic, string brokerName);
-        void receiveSub(string topic, string subName);
-        void receiveUnsub(string topic, string subName);
+        int receiveSub(string topic, string subName);
+        int receiveUnsub(string topic, string subName);
         void receivePublication(Message m, string pubName, int filter, int order, int eventNumber, int logMode);
         void status();
     }

@@ -8,6 +8,7 @@ using System.Runtime.Remoting.Messaging;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace PubSub
 {
@@ -82,6 +83,8 @@ namespace PubSub
         private string myPort;
         private List<string> subscriptions;
         private LoadBalancer loadBalancer;
+        private int okBrokers;
+        private int liveBrokers;
 
         // vida infinita !!!!
         public override object InitializeLifetimeService()
@@ -89,10 +92,12 @@ namespace PubSub
             return null;
         }
 
-        public delegate void SubUnsubRemoteAsyncDelegate(string t, string n);
-        public static void SubUnsubRemoteAsyncCallBack(IAsyncResult ar)
+        public delegate int SubUnsubRemoteAsyncDelegate(string t, string n);
+        public void SubUnsubRemoteAsyncCallBack(IAsyncResult ar)
         {
             SubUnsubRemoteAsyncDelegate del = (SubUnsubRemoteAsyncDelegate)((AsyncResult)ar).AsyncDelegate;
+            //Console.WriteLine("Sub Unsub: OK -> {0}", del.EndInvoke(ar));
+            okBrokers += del.EndInvoke(ar);           
             return;
         }
 
@@ -103,6 +108,7 @@ namespace PubSub
             this.nome = p3;
             this.myPort = p4;
             this.urlMyBroker = p5;
+            liveBrokers = urlMyBroker.Count;
             subscriptions = new List<string>();
             loadBalancer = new LoadBalancer(p5);
         }
@@ -122,7 +128,7 @@ namespace PubSub
                 {
                     SubUnsubRemoteAsyncDelegate remoteDel = new SubUnsubRemoteAsyncDelegate(subunsub.receiveSub);
                     AsyncCallback RemoteCallBAck = new AsyncCallback(SubUnsubRemoteAsyncCallBack);
-                    IAsyncResult remAr = remoteDel.BeginInvoke(topic, myURL, RemoteCallBAck, null);
+                    IAsyncResult remAr = remoteDel.BeginInvoke( topic, myURL, RemoteCallBAck, null );
                 }
                 catch(SocketException)
                 {
@@ -130,7 +136,20 @@ namespace PubSub
                 }
                 //subunsub.receiveSub(topic, myURL);
             }
-
+            
+            Stopwatch sw = new Stopwatch();
+            sw.Start();
+            // enquanto não recebi todas as respostas 
+            while (okBrokers != liveBrokers)
+            {
+                //enquanto não for timeout
+                if (sw.ElapsedMilliseconds > 1000)
+                {
+                    //TODO - enviar mensagem ao broker
+                    return;
+                }
+            }
+            okBrokers = 0;
             //BrokerReceiveBroker subunsub = (BrokerReceiveBroker)Activator.GetObject(typeof(BrokerReceiveBroker), urlMyBroker+"BrokerCommunication");
             //subunsub.receiveSub(topic, myURL);
         }
